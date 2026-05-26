@@ -4,134 +4,158 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Advanced Typography Demo</title>
-
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
-    rel="stylesheet"
-  >
+  <title>Advanced CSS Image Styling</title>
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header class="hero">
-    <h1>Advanced Typography</h1>
+  <header>
+    <h1>Advanced CSS Image Styling</h1>
 
-    <p class="hero-text">
-      Explore font families, responsive sizing,
-      font weights, variable styling, and modern
-      CSS typography techniques.
+    <p class="intro">
+      Explore responsive images, filters, shadows,
+      object-fit, hover effects, and creative image styling.
     </p>
   </header>
 
-  <!-- FONT FAMILY -->
+  <!-- BASIC IMAGE -->
   <section class="card">
-    <h2>Font Family</h2>
+    <h2>Responsive Image Basics</h2>
 
-    <p class="sans">
-      This paragraph uses a sans-serif font stack.
-    </p>
-
-    <p class="serif">
-      This paragraph uses a serif font stack.
-    </p>
-
-    <p class="mono">
-      This paragraph uses a monospace font stack.
-    </p>
+    <img
+      src="https://picsum.photos/id/1015/800/500"
+      alt="Mountain landscape"
+      class="responsive-image"
+    >
   </section>
 
-  <!-- FONT WEIGHT -->
+  <!-- BORDERS + RADIUS -->
   <section class="card">
-    <h2>Font Weight</h2>
+    <h2>Borders & Rounded Corners</h2>
 
-    <p class="thin">Thin Weight (100)</p>
+    <div class="image-row">
 
-    <p class="regular">Regular Weight (400)</p>
+      <img
+        src="https://picsum.photos/id/1027/300/300"
+        alt="Portrait example"
+        class="rounded-image"
+      >
 
-    <p class="bold">Bold Weight (700)</p>
+      <img
+        src="https://picsum.photos/id/1005/300/300"
+        alt="Circular profile image"
+        class="circle-image"
+      >
 
-    <p class="black">Black Weight (900)</p>
+    </div>
   </section>
 
-  <!-- FONT STYLE -->
+  <!-- SHADOWS -->
   <section class="card">
-    <h2>Font Style</h2>
+    <h2>Drop Shadows</h2>
 
-    <p class="normal-style">
-      This uses normal font styling.
-    </p>
-
-    <p class="italic-style">
-      This uses italic styling.
-    </p>
-
-    <p class="oblique-style">
-      This uses oblique styling.
-    </p>
+    <img
+      src="https://picsum.photos/id/1040/500/300"
+      alt="Shadow example"
+      class="shadow-image"
+    >
   </section>
 
-  <!-- RESPONSIVE TYPOGRAPHY -->
+  <!-- FILTERS -->
   <section class="card">
-    <h2>Responsive Typography</h2>
+    <h2>Image Filters</h2>
 
-    <h3 class="responsive-heading">
-      Resize the browser window
-    </h3>
+    <div class="image-row">
 
-    <p>
-      This heading uses <code>clamp()</code> so the font scales
-      responsively between a minimum and maximum size.
-    </p>
+      <img
+        src="https://picsum.photos/id/1060/300/200"
+        alt="Grayscale filter"
+        class="grayscale"
+      >
+
+      <img
+        src="https://picsum.photos/id/1060/300/200"
+        alt="Sepia filter"
+        class="sepia"
+      >
+
+      <img
+        src="https://picsum.photos/id/1060/300/200"
+        alt="Blur filter"
+        class="blur"
+      >
+
+    </div>
   </section>
 
-  <!-- LINE HEIGHT + LETTER SPACING -->
+  <!-- OBJECT FIT -->
   <section class="card">
-    <h2>Line Height & Letter Spacing</h2>
+    <h2>Object Fit</h2>
 
-    <p class="readability">
-      Typography affects readability and visual hierarchy.
-      Combining line-height, letter-spacing, and consistent
-      font sizing helps improve reading comfort across different
-      screen sizes and layouts.
-    </p>
+    <div class="gallery">
+
+      <img
+        src="https://picsum.photos/id/1039/600/400"
+        alt="Gallery image"
+        class="cover"
+      >
+
+      <img
+        src="https://picsum.photos/id/1035/600/400"
+        alt="Gallery image"
+        class="contain"
+      >
+
+    </div>
   </section>
 
-  <!-- SHORTHAND FONT -->
+  <!-- HOVER EFFECTS -->
   <section class="card">
-    <h2>Shorthand Font Property</h2>
+    <h2>Hover & Transition Effects</h2>
 
-    <p class="shorthand">
-      This paragraph uses the shorthand font property.
-    </p>
+    <img
+      src="https://picsum.photos/id/1050/500/300"
+      alt="Hover effect example"
+      class="hover-image"
+    >
   </section>
 
-  <!-- SYSTEM FONTS -->
+  <!-- CREATIVE SHAPES -->
   <section class="card">
-    <h2>System Fonts</h2>
+    <h2>Creative Shapes</h2>
 
-    <p class="system-font">
-      System fonts use the operating system’s native UI typeface
-      for better performance and familiarity.
-    </p>
+    <div class="image-row">
+
+      <img
+        src="https://picsum.photos/id/1025/300/300"
+        alt="Circle crop"
+        class="circle-shape"
+      >
+
+      <img
+        src="https://picsum.photos/id/1025/300/300"
+        alt="Hexagon crop"
+        class="hex-shape"
+      >
+
+    </div>
   </section>
 
-  <!-- ADVANCED FEATURES -->
+  <!-- FIGURE + CAPTION -->
   <section class="card">
-    <h2>Advanced Typography Features</h2>
+    <h2>Figure & Figcaption</h2>
 
-    <p class="small-caps">
-      Small caps typography styling example.
-    </p>
+    <figure>
+      <img
+        src="https://picsum.photos/id/1074/700/400"
+        alt="Ceramic installation artwork"
+      >
 
-    <p class="ligatures">
-      office efficient affinity official
-    </p>
+      <figcaption>
+        Ceramic installation artwork, 2025
+      </figcaption>
+    </figure>
   </section>
 
 </body>
